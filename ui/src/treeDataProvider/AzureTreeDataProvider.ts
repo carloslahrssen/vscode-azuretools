@@ -162,7 +162,7 @@ export class AzureTreeDataProvider<TRoot = ISubscriptionRoot> implements IAzureT
             await refreshTreeItem(treeItem);
         }
 
-        this.refreshUIOnly(treeItem);
+        this.refreshUIOnly(undefined);
     }
 
     public refreshUIOnly(treeItem: AzureTreeItem<TRoot | ISubscriptionRoot> | undefined): void {
