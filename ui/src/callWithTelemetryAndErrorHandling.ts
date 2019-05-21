@@ -20,15 +20,9 @@ function initContext(): [number, IActionContext] {
     const context: IActionContext = {
         telemetry: {
             properties: {
-                isActivationEvent: 'false',
-                cancelStep: '',
-                result: 'Succeeded',
-                stack: '',
-                error: '',
-                errorMessage: ''
+                result: 'Succeeded'
             },
             measurements: {
-                duration: 0
             },
             suppressIfSuccessful: false
         },
